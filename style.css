@@ -5,8 +5,16 @@
     
 }
 
+/* Estilo para id=titulo */
+#titulo {
+    font-family: sans-serif;
+    color: black;
+    justify-content: center;
+}
+
+
 fieldset {
-    border: 0;
+    border: none;
 }
 
 
@@ -14,7 +22,7 @@ body {
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color:blue;
+    color:rgb(0, 0, 0);
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
@@ -24,17 +32,55 @@ input, select, button {
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color:blue;
-    border-radius: 5px;
+    color:black;
+    border-radius: 05px;
+    
 }
 
 .campo {
     margin-bottom: 1em;
+    
 }
     
 
 .campo label {
     margin-bottom: 0.2em;
-    color:blue;
+    color:rgb(0, 0, 0);
     display: block;
+}
+
+.grupo:before, .grupo:after {
+    display: table
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input:focus, .campo select:focus {
+    background-color: rgb(227, 225, 225);
+}
+
+.botao{
+    font-size: 1.2em;
+    background: black;
+    margin-bottom: 1 em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 5px 5px 5px gray;
+    text-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+    
+}
+
+.botao:hover{
+    background-color: goldenrod;
+}
+
+.campo input [type="text"], .campo input[type="password"], .campo input[type="email"], .campo input[type="select"] {
+    padding: 0.5em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2 px rgb(98, 95, 95);
+    display: block
 }
